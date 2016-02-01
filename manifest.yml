@@ -1,0 +1,9 @@
+---
+applications:
+- name: cf-vault-request-service-broker
+  memory: 512M
+  instances: 2
+  path: build/libs/cf-vault-request-service-broker-0.0.1-SNAPSHOT.jar
+  environment:
+    SECURITY_USER_NAME: test-user
+    SECURITY_USER_PASSWORD: test-password #CHANGE THIS
