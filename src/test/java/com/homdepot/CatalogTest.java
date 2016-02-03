@@ -33,6 +33,8 @@ public class CatalogTest {
 
     @Test
     public void itShouldRespondToTheCatalogEndpoint() throws Exception {
-        mockMvc.perform(get("/v2/catalog")).andExpect(status().isOk());
+        mockMvc.perform(get("/v2/catalog")
+                    .header("X-Broker-Api-Version", "2.8"))
+                .andExpect(status().isOk());
     }
 }

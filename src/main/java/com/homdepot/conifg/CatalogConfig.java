@@ -30,16 +30,18 @@ public class CatalogConfig {
                                 new Plan("default-platn",
                                         "The Default Plan",
                                         "This is the long form description",
-                                        getPlanMetadata())),
+                                        null)),
                         Arrays.asList("credentials", "secure"),
-                        getServiceDefinitionMetadata(),
+                        null,
                         null,
                         null)));
         return catalog;
     }
 
     private Map<String, Object> getPlanMetadata() {
-        return new HashMap<String, Object>();
+        Map<String, Object> md = new HashMap<String, Object>();
+        md.put("displayName", "Vault Broker");
+        return md;
     }
 
     private Map<String, Object> getServiceDefinitionMetadata() {
