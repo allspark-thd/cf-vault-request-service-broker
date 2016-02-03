@@ -1,4 +1,4 @@
-package com.homdepot.service;
+package com.homedepot.service;
 
 import org.springframework.cloud.servicebroker.model.*;
 import org.springframework.cloud.servicebroker.service.ServiceInstanceService;

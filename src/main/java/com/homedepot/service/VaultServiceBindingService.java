@@ -1,4 +1,4 @@
-package com.homdepot.service;
+package com.homedepot.service;
 
 import org.springframework.cloud.servicebroker.model.CreateServiceInstanceBindingRequest;
 import org.springframework.cloud.servicebroker.model.CreateServiceInstanceBindingResponse;

@@ -1,4 +1,4 @@
-package com.homdepot.conifg;
+package com.homedepot.config;
 
 import org.apache.log4j.Logger;
 import org.springframework.cloud.servicebroker.model.Catalog;
@@ -30,9 +30,9 @@ public class CatalogConfig {
                                 new Plan("default-platn",
                                         "The Default Plan",
                                         "This is the long form description",
-                                        null)),
+                                        getPlanMetadata())),
                         Arrays.asList("credentials", "secure"),
-                        null,
+                        getServiceDefinitionMetadata(),
                         null,
                         null)));
         return catalog;
